@@ -30,5 +30,5 @@ function check_install {
         error "Could not install $app; please install it and re-run this script"
 
     fi
-    log_done "$app installed!"
+    log_done "$app installed"
 }
