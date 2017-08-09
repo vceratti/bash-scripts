@@ -33,6 +33,6 @@ while true ; do
         --project-name ) project_name="${2}"; shift 2;;
         --branch ) branch="${2}"; shift 2;;
         --  ) shift; break;;
-        *|--help help;;
+        *|--help) help-usage;;
     esac
 done
