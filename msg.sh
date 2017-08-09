@@ -38,7 +38,7 @@ function log_ask_newline {
 
 function log_wait {
    newline
-   printf "   - $1... "
+   printf "   - $1..."
 }
 
 function log_done {
