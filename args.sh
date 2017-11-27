@@ -19,7 +19,7 @@ function help-usage {
 
 args="project-name:,branch:"
 
-OPTIONS=$(getopt -o a: --long ${args} -- "$@" 2> /dev/null)
+OPTIONS=$(getopt  -o p:e: --long ${args} -- "$@" 2> /dev/null)
 
 if [[ $? -ne 0 ]]
 then
