@@ -58,7 +58,7 @@ function log_error {
 }
 
 function log_exit {
-    print_l $1
+    log_important $1
     exit 1
 }
 
