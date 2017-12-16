@@ -8,4 +8,5 @@ source "$lib_root/installer.sh"
 source "$lib_root/msg.sh"
 source "$lib_root/project.sh"
 source "$lib_root/file.sh"
+source "$lib_root/docker-installer.sh"
 
