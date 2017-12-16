@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+first_time=""
 function choose_project_name {
     while empty_str_cmd "$project_name"; do
 
@@ -8,7 +9,10 @@ function choose_project_name {
         read -r project_name
     done
 
-    log_important "Your project name is:   $project_name"
+    if empty_str_cmd "$first_time"; then
+        first_time="false"
+        log_important "Your project name is:   $project_name"
+    fi
 }
 
 function choose_env {
