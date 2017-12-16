@@ -71,7 +71,7 @@ function docker_install {
 
 function install_docker_and_compose {
     if empty_str_cmd "$disable_docker_check"; then
-        exit 0
+        return
     fi
 
     log_wait "Checking Docker and Docker Compose"
