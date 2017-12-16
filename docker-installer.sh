@@ -70,7 +70,7 @@ function docker_install {
 }
 
 function install_docker_and_compose {
-    if empty_str_cmd "$disable_docker_check"; then
+    if ! empty_str_cmd "$disable_docker_check"; then
         return
     fi
 
