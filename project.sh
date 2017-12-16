@@ -13,7 +13,7 @@ function choose_project_name {
 
 function choose_env {
     if [[ ! "$branch" =~ php56\-api|php71\-api ]]; then
-        branch=""
+        branch="php71-api"
     fi;
 
     while empty_str_cmd "$branch"; do
